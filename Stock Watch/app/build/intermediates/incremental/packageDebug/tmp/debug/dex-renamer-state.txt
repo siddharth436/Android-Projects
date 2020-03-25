@@ -1,0 +1,4 @@
+#Tue Mar 10 14:25:27 CDT 2020
+base.0=/Users/Needful/Desktop/Stock Watch/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
