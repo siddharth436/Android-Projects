@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="top|right"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:fadeScrollbars="true"
+    android:fadingEdge="vertical">
+
+    <TextView
+        android:id="@+id/ofcActBannerText"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:background="@color/colorPurpal"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:saveEnabled="true"
+        android:scrollIndicators="top|right"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ofcActBannerText"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/officalActContraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlue">
+
+            <TextView
+                android:id="@+id/ofcAbtTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ofcImgView"
+                android:layout_width="355dp"
+                android:layout_height="388dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offc_party_unique" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/address_str"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toStartOf="@+id/ofcAddTextView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcImgView" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/phone_str"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toStartOf="@+id/ofcPhoneNumTextView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcAddTextView" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/email_str"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toStartOf="@+id/ofcEmailTextView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcPhoneNumTextView" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/Website_str"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toStartOf="@+id/ofcWebSiteTectView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcEmailTextView" />
+
+            <TextView
+                android:id="@+id/ofcAddTextView"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="64dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcImgView" />
+
+            <TextView
+                android:id="@+id/ofcPhoneNumTextView"
+                android:layout_width="230dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcAddTextView" />
+
+            <TextView
+                android:id="@+id/ofcEmailTextView"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcPhoneNumTextView" />
+
+            <TextView
+                android:id="@+id/ofcWebSiteTectView"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="64dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcEmailTextView" />
+
+            <ImageView
+                android:id="@+id/googleIconImageView"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcWebSiteTectView"
+                app:srcCompat="@drawable/googleplus" />
+
+            <ImageView
+                android:id="@+id/facebookIconImageView"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toRightOf="@+id/googleIconImageView"
+                app:layout_constraintTop_toBottomOf="@+id/ofcWebSiteTectView"
+                app:srcCompat="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/twitterIconImageView"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toRightOf="@+id/facebookIconImageView"
+                app:layout_constraintTop_toBottomOf="@+id/ofcWebSiteTectView"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/youtubeIconImageView"
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toRightOf="@+id/twitterIconImageView"
+                app:layout_constraintTop_toBottomOf="@+id/ofcWebSiteTectView"
+                app:srcCompat="@drawable/youtube" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="140dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ofcImgView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/offc_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ofcAbtTextView" />
+
+            <TextView
+                android:id="@+id/offc_party_unique"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offc_name" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
