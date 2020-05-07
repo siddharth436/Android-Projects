@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mad.siddharth.iit_news_gateway">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_lanucher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_lanucher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mad.siddharth.iit_news_gateway.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.mad.siddharth.iit_news_gateway.NewsService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <receiver android:name="com.mad.siddharth.iit_news_gateway.MainActivity$NewsReceiver" android:exported="true"></receiver>
+        <receiver android:name="com.mad.siddharth.iit_news_gateway.NewsService$ServiceReceiver" android:exported="true"></receiver>
+    </application>
+
+</manifest>
