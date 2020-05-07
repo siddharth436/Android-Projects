@@ -1,5 +1,12 @@
 # Android-Projects
 
+# News Gateway
+
+![](News%20Gateway%20/shot1.png)
+![](News%20Gateway%20/shot2.png)
+![](News%20Gateway%20/shot3.png)
+![](News%20Gateway%20/shot4.png)
+
 # Know Your Government
 
 
